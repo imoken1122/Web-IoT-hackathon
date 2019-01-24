@@ -7,10 +7,10 @@
 #include "heartRate.h"
 //
 
-const char* ssid     = "tlab301-24g";
-const char* password = "tsunolabwlan-ga9sei3";
+const char* ssid     = "";
+const char* password = "";
 char path[] = "/";
-char host[] = "192.168.1.224";
+char host[] = "";
 WebSocketClient webSocketClient;
 
 // nyakuhaku
@@ -56,7 +56,7 @@ void setup() {
   
 
   // Connect to the websocket server
-  if (client.connect("192.168.1.224", 3000)) {
+  if (client.connect("", 3000)) {
     Serial.println("Connected");
   } else {
     Serial.println("Connection failed.");
